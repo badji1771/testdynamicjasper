@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="DJR_14" pageWidth="595" pageHeight="842" whenNoDataType="NoPages" columnWidth="555" columnSpacing="10" leftMargin="30" rightMargin="10" topMargin="20" bottomMargin="10" scriptletClass="ar.com.fdvs.dj.core.DJDefaultScriptlet" whenResourceMissingType="Key" uuid="47ed3f22-bf74-4d32-996b-2519d70c48bc">
+	<style name="reportTitleStyle" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Center" hImageAlign="Center" vTextAlign="Top" vImageAlign="Top" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="14" isBold="true" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="reportSubtitleStyle" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="defaultHeaderStyle" mode="Opaque" forecolor="#000000" backcolor="#C0C0C0" radius="0" hTextAlign="Center" hImageAlign="Center" vTextAlign="Middle" vImageAlign="Middle" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="true" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="defaultDetailStyle" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Arial_for_column_DJR_14_COLUMN_0_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="currencyStyle" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Right" hImageAlign="Right" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Arial_for_column_DJR_14_COLUMN_1_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Right" hImageAlign="Right" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Arial_for_column_DJR_14_COLUMN_2_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Arial_for_column_DJR_14_COLUMN_3_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Arial_for_column_DJR_14_COLUMN_4_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Right" hImageAlign="Right" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Arial_for_column_DJR_14_COLUMN_5_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Arial_for_column_DJR_14_COLUMN_6_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Arial_for_column_DJR_14_COLUMN_7_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Right" hImageAlign="Right" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Arial_for_column_DJR_14_COLUMN_8_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Arial_for_column_DJR_14_COLUMN_9_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Arial_for_column_DJR_14_COLUMN_10_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Right" hImageAlign="Right" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Arial_for_column_DJR_14_COLUMN_11_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Arial_for_column_DJR_14_COLUMN_12_" mode="Transparent" forecolor="#000000" backcolor="#FFFFFF" radius="0" hTextAlign="Left" hImageAlign="Left" vTextAlign="Bottom" vImageAlign="Bottom" rotation="None" isBlankWhenNull="true" fontName="Arial" fontSize="10" isBold="false" isItalic="false" isUnderline="false" isPdfEmbedded="false">
+		<box padding="2">
+			<pen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+		</box>
+	</style>
+	<field name="state" class="java.lang.String"/>
+	<field name="amount" class="java.lang.Float"/>
+	<field name="branch" class="java.lang.String"/>
+	<field name="item" class="java.lang.String"/>
+	<pageHeader>
+		<band height="45">
+			<textField textAdjust="StretchHeight">
+				<reportElement style="reportTitleStyle" positionType="Float" x="0" y="0" width="555" height="30" isRemoveLineWhenBlank="true" uuid="cdd75ea8-f1b7-47d7-b5fa-fbd3dcfa68fd">
+					<printWhenExpression><![CDATA[new java.lang.Boolean(((Number)$V{PAGE_NUMBER}).doubleValue() == 1)]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA["test des trimestres2020"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement style="reportSubtitleStyle" positionType="Float" x="0" y="30" width="555" height="15" isRemoveLineWhenBlank="true" uuid="46db0fda-f593-41b9-8433-5fe9ea77c3eb">
+					<printWhenExpression><![CDATA[new java.lang.Boolean(((Number)$V{PAGE_NUMBER}).doubleValue() == 1)]]></printWhenExpression>
+				</reportElement>
+				<textFieldExpression><![CDATA["exemple :Mon Nov 02 12:06:38 UTC 2020"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="30">
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement key="header_Pays" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="42" height="30" isPrintWhenDetailOverflows="true" uuid="7058869d-7695-4994-8ea3-0d805b709aa2"/>
+				<textFieldExpression><![CDATA["Pays"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement key="colspan-headeritem1" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="42" y="0" width="126" height="15" uuid="76913cd5-fb05-4bdc-aed8-fa39c5d37e85"/>
+				<textFieldExpression><![CDATA["Trimestre3"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement key="header_item1" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="42" y="15" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="56c7c470-ad35-4f29-a7fe-7055a4f84a4a"/>
+				<textFieldExpression><![CDATA["item1"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement key="header_item2" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="84" y="15" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="f168a4ac-4abd-47ed-b25b-a5e257eb4130"/>
+				<textFieldExpression><![CDATA["item2"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement key="header_item3" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="126" y="15" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="fab683ec-8c02-477d-bc4c-6b5de0326458"/>
+				<textFieldExpression><![CDATA["item3"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement key="colspan-headeritem1" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="168" y="0" width="126" height="15" uuid="71ec0984-4c13-4c41-9c9a-a734e7627b85"/>
+				<textFieldExpression><![CDATA["Trimestre4"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement key="header_item1" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="168" y="15" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="2d50c778-1290-4e9d-9668-5ec0788cf927"/>
+				<textFieldExpression><![CDATA["item1"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement key="header_item2" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="210" y="15" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="9a34d73b-9f99-4b2a-9676-ac4d900dc3f5"/>
+				<textFieldExpression><![CDATA["item2"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement key="header_item3" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="252" y="15" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="dd4f7e7d-0274-4eb5-aeea-e648b4a90396"/>
+				<textFieldExpression><![CDATA["item3"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement key="colspan-headeritem1" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="294" y="0" width="126" height="15" uuid="3d8e46f3-7616-4d0a-b722-669ac3196af1"/>
+				<textFieldExpression><![CDATA["Trimestre5"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement key="header_item1" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="294" y="15" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="4ccc703d-e523-4f05-8aef-fbf7118acade"/>
+				<textFieldExpression><![CDATA["item1"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement key="header_item2" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="336" y="15" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="3db0b1a9-fd83-4885-acd5-01b9e92df6b7"/>
+				<textFieldExpression><![CDATA["item2"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement key="header_item3" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="378" y="15" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="4b167783-bb7f-4909-bac7-3db87b41c28c"/>
+				<textFieldExpression><![CDATA["item3"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement key="colspan-headeritem1" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="420" y="0" width="135" height="15" uuid="b1496b1c-2d42-44f8-8035-738bdeebd07e"/>
+				<textFieldExpression><![CDATA["Trimestre6"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement key="header_item1" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="420" y="15" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="a3e1911a-627d-4b8d-bf2a-2daf9ce62438"/>
+				<textFieldExpression><![CDATA["item1"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement key="header_item2" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="462" y="15" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="f33563dd-f6a7-4570-a709-8c7ed2c3a945"/>
+				<textFieldExpression><![CDATA["item2"]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement key="header_item3" style="defaultHeaderStyle" positionType="Float" stretchType="RelativeToTallestObject" x="504" y="15" width="51" height="15" isPrintWhenDetailOverflows="true" uuid="a84fc10b-1951-4f29-8a71-4eeb584ed91e"/>
+				<textFieldExpression><![CDATA["item3"]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Immediate">
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement style="Arial_for_column_DJR_14_COLUMN_0_" positionType="Float" stretchType="RelativeToTallestObject" x="0" y="0" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="0ee7a26f-4e95-4e45-9d6e-9e999c60e21b"/>
+				<textFieldExpression><![CDATA[$F{state}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" pattern="$ #.00" isBlankWhenNull="true">
+				<reportElement style="Arial_for_column_DJR_14_COLUMN_1_" positionType="Float" stretchType="RelativeToTallestObject" x="42" y="0" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="a78a4e57-579e-43e1-a6d5-1c543096b30c"/>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement style="Arial_for_column_DJR_14_COLUMN_2_" positionType="Float" stretchType="RelativeToTallestObject" x="84" y="0" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="7ec45fbe-9cd4-48e8-9cea-7696d2dc1e59"/>
+				<textFieldExpression><![CDATA[$F{branch}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement style="Arial_for_column_DJR_14_COLUMN_3_" positionType="Float" stretchType="RelativeToTallestObject" x="126" y="0" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="0217984a-00e9-47f4-be55-17d7e8ad17c2"/>
+				<textFieldExpression><![CDATA[$F{item}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" pattern="$ #.00" isBlankWhenNull="true">
+				<reportElement style="Arial_for_column_DJR_14_COLUMN_4_" positionType="Float" stretchType="RelativeToTallestObject" x="168" y="0" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="4a6b0316-de16-4e69-aba8-944512f6c8a9"/>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement style="Arial_for_column_DJR_14_COLUMN_5_" positionType="Float" stretchType="RelativeToTallestObject" x="210" y="0" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="c5872d7f-658e-4911-a5df-51d3dd68830b"/>
+				<textFieldExpression><![CDATA[$F{branch}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement style="Arial_for_column_DJR_14_COLUMN_6_" positionType="Float" stretchType="RelativeToTallestObject" x="252" y="0" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="2e547b24-db97-4d0d-8a96-3599c2fcaa32"/>
+				<textFieldExpression><![CDATA[$F{item}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" pattern="$ #.00" isBlankWhenNull="true">
+				<reportElement style="Arial_for_column_DJR_14_COLUMN_7_" positionType="Float" stretchType="RelativeToTallestObject" x="294" y="0" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="919844dd-0822-415e-a14e-adde1a5ad977"/>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement style="Arial_for_column_DJR_14_COLUMN_8_" positionType="Float" stretchType="RelativeToTallestObject" x="336" y="0" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="74e80ba7-a9e1-49fa-ae2f-3bac55279a8c"/>
+				<textFieldExpression><![CDATA[$F{branch}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement style="Arial_for_column_DJR_14_COLUMN_9_" positionType="Float" stretchType="RelativeToTallestObject" x="378" y="0" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="1cc43bd8-faa1-4785-b8fa-d6a9749f855a"/>
+				<textFieldExpression><![CDATA[$F{item}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" pattern="$ #.00" isBlankWhenNull="true">
+				<reportElement style="Arial_for_column_DJR_14_COLUMN_10_" positionType="Float" stretchType="RelativeToTallestObject" x="420" y="0" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="55d3ecc7-5fbe-4686-90ce-1ece9ccb0cde"/>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement style="Arial_for_column_DJR_14_COLUMN_11_" positionType="Float" stretchType="RelativeToTallestObject" x="462" y="0" width="42" height="15" isPrintWhenDetailOverflows="true" uuid="31ac2299-4a5a-4485-92cb-3e05a76e78fd"/>
+				<textFieldExpression><![CDATA[$F{branch}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight" isBlankWhenNull="true">
+				<reportElement style="Arial_for_column_DJR_14_COLUMN_12_" positionType="Float" stretchType="RelativeToTallestObject" x="504" y="0" width="51" height="15" isPrintWhenDetailOverflows="true" uuid="149a52ad-9def-43e8-ac4b-adfaffd5e729"/>
+				<textFieldExpression><![CDATA[$F{item}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band/>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>
