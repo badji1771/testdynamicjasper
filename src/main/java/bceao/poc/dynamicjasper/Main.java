@@ -43,7 +43,7 @@ public class Main {
 	protected FastReportBuilder frb = new FastReportBuilder();
 	protected final Map<String, Object> params = new HashMap<String, Object>();
 
-	public List<String> getTrimestre() {
+	public static List<String> getTrimestre() {
 		List<String> lt = new ArrayList<String>();
 		lt.add("Trimestre1");
 		lt.add("Trimestre2");
@@ -108,14 +108,12 @@ public class Main {
 
 		col.add(new Product(new Long("3"), "book", "The Pelican Brief,", "Washington", "Main Street", new Long("1400"),
 				new Float("3322")));
-
 		return col;
 
 	}
 
-	public void getParam(String trimestreDepart, int nbrTrimestre, String titre, String sousTitre) throws Exception {
+	public void getParam(String trimestreDepart, List<String> listTrimestre,int nbrTrimestre, String titre, String sousTitre) throws Exception {
 		int j = 1;
-		List<String> lt = getTrimestre();
 
 		frb.addColumn("Pays", "state", String.class.getName(), 30);
 		frb.setTitle(titre);
@@ -129,12 +127,8 @@ public class Main {
 			frb.addColumn("item3", "item", String.class.getName(), 30);
 		}
 
-		for (String string : lt) {
-			if (lt.indexOf(trimestreDepart) <= lt.indexOf(string) && (lt.indexOf(string)) <= nbrTrimestre + 1) {
-				// System.out.println("lt.indexOf(trimestre)" +
-				// lt.indexOf(trimestreDepart));
-				// System.out.println("lt.indexOf(string)" +
-				// lt.indexOf(string));
+		for (String string : listTrimestre) {
+			if (listTrimestre.indexOf(trimestreDepart) <= listTrimestre.indexOf(string) && (listTrimestre.indexOf(string)) <= nbrTrimestre + 1) {
 				frb.setColspan(j, 3, string);
 				j = j + 3;
 			}
@@ -174,8 +168,7 @@ public class Main {
 		return new ClassicLayoutManager();
 	}
 
-	protected JRDataSource getDataSource(DynamicReport dr) {
-		Collection<?> dummyCollection = getDummyCollection();
+	protected JRDataSource getDataSource(DynamicReport dr,Collection<?> dummyCollection) {
 		dummyCollection = SortUtils.sortCollection(dummyCollection, dr.getColumns());
 		JRDataSource ds = new JRBeanCollectionDataSource(dummyCollection);
 		return ds;
@@ -222,8 +215,7 @@ public class Main {
 	}
 
 	protected void exportReport(DynamicReport dr) throws Exception {
-		exportReport(jp,
-				System.getProperty("user.dir") + "/target/reports/" + this.getClass().getSimpleName() + ".pdf");
+		exportReport(jp,System.getProperty("user.dir") + "/target/reports/" + this.getClass().getSimpleName() + ".pdf");
 		exportToJRXML(dr);
 	}
 
@@ -241,10 +233,10 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 		Main run = new Main();
 		// récupération des données et paramètre
-		run.getParam("Trimestre3", 4, "test des trimestres", "exemple");
+		run.getParam("Trimestre3",getTrimestre(), 4, "test des trimestres", "exemple");
 		// initialisation de dynamic reporting
 		DynamicReport dr = run.buildReportTemplate();
-		JRDataSource ds = run.getDataSource(dr);
+		JRDataSource ds = run.getDataSource(dr,getDummyCollection());
 		// constructure du template
 		run.construireReport(ds, dr);
 		// g"n"ration des template
