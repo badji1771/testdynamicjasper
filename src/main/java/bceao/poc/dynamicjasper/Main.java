@@ -51,6 +51,8 @@ public class Main {
 		lt.add("Trimestre4");
 		lt.add("Trimestre5");
 		lt.add("Trimestre6");
+		lt.add("Trimestre7");
+		lt.add("Trimestre8");
 		return lt;
 	}
 
@@ -112,9 +114,8 @@ public class Main {
 
 	}
 
-	public void getParam(String trimestreDepart, List<String> listTrimestre,int nbrTrimestre, String titre, String sousTitre) throws Exception {
+	public void getParam(String trimestreDepart, List<String> listTrimestre,Integer nbrTrimestre, String titre, String sousTitre) throws Exception {
 		int j = 1;
-
 		frb.addColumn("Pays", "state", String.class.getName(), 30);
 		frb.setTitle(titre);
 		frb.setSubtitle(sousTitre + " :" + new Date());
@@ -128,8 +129,12 @@ public class Main {
 		}
 
 		for (String string : listTrimestre) {
-			if (listTrimestre.indexOf(trimestreDepart) <= listTrimestre.indexOf(string) && (listTrimestre.indexOf(string)) <= nbrTrimestre + 1) {
-				frb.setColspan(j, 3, string);
+			Integer index =listTrimestre.indexOf(string);
+			if (listTrimestre.indexOf(trimestreDepart) <= listTrimestre.indexOf(string) ) {
+				if(index < (nbrTrimestre+listTrimestre.indexOf(trimestreDepart))){
+					frb.setColspan(j, 3, string);
+				}
+				
 				j = j + 3;
 			}
 		}
