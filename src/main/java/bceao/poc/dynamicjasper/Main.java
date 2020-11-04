@@ -127,14 +127,12 @@ public class Main {
 			frb.addColumn("item2", "branch", String.class.getName(), 30);
 			frb.addColumn("item3", "item", String.class.getName(), 30);
 		}
-
 		for (String string : listTrimestre) {
 			Integer index =listTrimestre.indexOf(string);
 			if (listTrimestre.indexOf(trimestreDepart) <= listTrimestre.indexOf(string) ) {
 				if(index < (nbrTrimestre+listTrimestre.indexOf(trimestreDepart))){
 					frb.setColspan(j, 3, string);
 				}
-				
 				j = j + 3;
 			}
 		}
@@ -205,7 +203,6 @@ public class Main {
 	public static void exportReport(JasperPrint jp, String path) throws JRException, FileNotFoundException {
 		log.debug("Exporing report to: " + path);
 		JRPdfExporter exporter = new JRPdfExporter();
-
 		File outputFile = new File(path);
 		File parentFile = outputFile.getParentFile();
 		if (parentFile != null)
@@ -238,7 +235,7 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 		Main run = new Main();
 		// récupération des données et paramètre
-		run.getParam("Trimestre3",getTrimestre(), 4, "test des trimestres", "exemple");
+		run.getParam("Trimestre3",getTrimestre(), 3, "test des trimestres", "exemple");
 		// initialisation de dynamic reporting
 		DynamicReport dr = run.buildReportTemplate();
 		JRDataSource ds = run.getDataSource(dr,getDummyCollection());
