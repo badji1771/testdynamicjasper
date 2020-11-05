@@ -21,6 +21,7 @@ import ar.com.fdvs.dj.domain.AutoText;
 import ar.com.fdvs.dj.domain.DynamicReport;
 import ar.com.fdvs.dj.domain.builders.FastReportBuilder;
 import ar.com.fdvs.dj.domain.constants.Border;
+import ar.com.fdvs.dj.domain.constants.Page;
 import ar.com.fdvs.dj.util.SortUtils;
 import net.sf.jasperreports.engine.JRDataSource;
 import net.sf.jasperreports.engine.JRException;
@@ -30,6 +31,7 @@ import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.engine.export.JRPdfExporter;
 import net.sf.jasperreports.engine.export.JRXlsExporter;
+import net.sf.jasperreports.engine.type.OrientationEnum;
 import net.sf.jasperreports.export.OutputStreamExporterOutput;
 import net.sf.jasperreports.export.SimpleExporterInput;
 import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
@@ -140,6 +142,7 @@ public class Main {
 		//frb.setColumnsPerPage (2,10);
 		frb.setUseFullPageWidth(true);
 		frb.addAutoText(AutoText.AUTOTEXT_PAGE_X_SLASH_Y, AutoText.POSITION_FOOTER, AutoText.ALIGNMENT_RIGHT);
+		frb.setPageSizeAndOrientation(Page.Page_A4_Landscape());
 	}
 
 	public void construireReport(JRDataSource ds, DynamicReport dr) throws Exception {
@@ -159,6 +162,8 @@ public class Main {
 			jp = JasperFillManager.fillReport(jr, params, ds);
 		else
 			jp = JasperFillManager.fillReport(jr, params);
+		//jp.setOrientation(OrientationEnum.PORTRAIT);
+		//jp.setOrientation(OrientationEnum.LANDSCAPE);
 		log.debug("Filling done!");
 		log.debug("Exporting the report (pdf, xls, etc)");
 		log.debug("test finished");
