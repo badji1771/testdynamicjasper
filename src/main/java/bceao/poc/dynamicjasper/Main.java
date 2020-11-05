@@ -17,6 +17,7 @@ import org.apache.commons.logging.LogFactory;
 import ar.com.fdvs.dj.core.DynamicJasperHelper;
 import ar.com.fdvs.dj.core.layout.ClassicLayoutManager;
 import ar.com.fdvs.dj.core.layout.LayoutManager;
+import ar.com.fdvs.dj.domain.AutoText;
 import ar.com.fdvs.dj.domain.DynamicReport;
 import ar.com.fdvs.dj.domain.builders.FastReportBuilder;
 import ar.com.fdvs.dj.domain.constants.Border;
@@ -136,6 +137,9 @@ public class Main {
 				j = j + 3;
 			}
 		}
+		//frb.setColumnsPerPage (2,10);
+		frb.setUseFullPageWidth(true);
+		frb.addAutoText(AutoText.AUTOTEXT_PAGE_X_SLASH_Y, AutoText.POSITION_FOOTER, AutoText.ALIGNMENT_RIGHT);
 	}
 
 	public void construireReport(JRDataSource ds, DynamicReport dr) throws Exception {
@@ -155,7 +159,6 @@ public class Main {
 			jp = JasperFillManager.fillReport(jr, params, ds);
 		else
 			jp = JasperFillManager.fillReport(jr, params);
-
 		log.debug("Filling done!");
 		log.debug("Exporting the report (pdf, xls, etc)");
 		log.debug("test finished");
@@ -233,6 +236,8 @@ public class Main {
 	}
 
 	public static void main(String[] args) throws Exception {
+		
+		
 		Main run = new Main();
 		// récupération des données et paramètre
 		run.getParam("Trimestre3",getTrimestre(), 3, "test des trimestres", "exemple");
