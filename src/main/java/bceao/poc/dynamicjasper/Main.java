@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import ar.com.fdvs.dj.domain.Style;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
@@ -119,22 +120,27 @@ public class Main {
 
 	public void getParam(String trimestreDepart, List<String> listTrimestre,Integer nbrTrimestre, String titre, String sousTitre) throws Exception {
 		int j = 1;
-		frb.addColumn("Pays", "state", String.class.getName(), 30);
+
+		// Créer un style avec une bordure pour les cellules
+		Style cellStyle = new Style();
+		cellStyle.setBorder(Border.THIN());
+
+		frb.addColumn("Pays", "state", String.class.getName(), 30, cellStyle);
 		frb.setTitle(titre);
 		frb.setSubtitle(sousTitre + " :" + new Date());
 		frb.setColumnsPerPage(1, 10);
 		frb.setUseFullPageWidth(true);
 
 		for (int i = 0; i < nbrTrimestre; i++) {
-			frb.addColumn("item1", "amount", Float.class.getName(), 30);
-			frb.addColumn("item2", "branch", String.class.getName(), 30);
-			frb.addColumn("item3", "item", String.class.getName(), 30);
+			frb.addColumn("item1", "amount", Float.class.getName(), 30, cellStyle);
+			frb.addColumn("item2", "branch", String.class.getName(), 30, cellStyle);
+			frb.addColumn("item3", "item", String.class.getName(), 30, cellStyle);
 		}
-		for (String string : listTrimestre) {
-			Integer index =listTrimestre.indexOf(string);
-			if (listTrimestre.indexOf(trimestreDepart) <= listTrimestre.indexOf(string) ) {
+		for (String trimestre : listTrimestre) {
+			Integer index =listTrimestre.indexOf(trimestre);
+			if (listTrimestre.indexOf(trimestreDepart) <= listTrimestre.indexOf(trimestre) ) {
 				if(index < (nbrTrimestre+listTrimestre.indexOf(trimestreDepart))){
-					frb.setColspan(j, 3, string);
+					frb.setColspan(j, 3, trimestre);
 				}
 				j = j + 3;
 			}
@@ -253,6 +259,7 @@ public class Main {
 		run.construireReport(ds, dr);
 		// g"n"ration des template
 		run.exportReport(dr);
+
 	}
 
 }
